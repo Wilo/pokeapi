@@ -1,0 +1,37 @@
+{
+  "name": "pokeapi-backend",
+  "version": "1.0.0",
+  "description": "A simple backend implementation of pokedex api",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wilo/pokeapi/backend"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "pokeapi",
+    "pokemon",
+    "express",
+    "postgresql",
+    "sequelize"
+  ],
+  "author": "William Méndez",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.25.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
