@@ -8,16 +8,19 @@ export const Pokemons = sequelize.define('pokemons', {
         autoIncrement: true
     },
     name: {
-        type: DataTypes.STRING(140)
+        type: DataTypes.STRING(140),
+        allowNull: false,
+        unique: true
     },
     description: {
-        type: DataTypes.TEXT
+        type: DataTypes.TEXT,
+        allowNull: false,
     },
     height: {
-        type: DataTypes.FLOAT
+        type: DataTypes.INTEGER
     },
     weight: {
-        type: DataTypes.FLOAT
+        type: DataTypes.INTEGER
     },
     image: {
         type: DataTypes.STRING(200)

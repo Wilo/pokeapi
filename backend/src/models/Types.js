@@ -8,7 +8,9 @@ export const Types = sequelize.define('types', {
         autoIncrement: true
     },
     name: {
-        type: DataTypes.STRING(140)
+        type: DataTypes.STRING(140),
+        allowNull: false,
+        unique: true
     }
 }, {
     timestamps: false
