@@ -25,7 +25,7 @@ export const Pokemons = sequelize.define('pokemons', {
     image: {
         type: DataTypes.STRING(200),
         validate: {
-            isUrl: true,
+            isUrl: true
         }
     }
 }, {
