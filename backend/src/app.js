@@ -1,7 +1,7 @@
 import compression from "compression";
 import express from "express";
 //Local imports
-import healthRoutes from './routes/health.router.js';
+import healthRoutes from './routes/health.routes.js';
 import morgan from "morgan";
 
 const app = express();
