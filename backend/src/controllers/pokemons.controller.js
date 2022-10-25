@@ -40,6 +40,10 @@ export const getPokemon = async(req, res) => {
         const pk = req.params.id;
         const pokemon = await Pokemons.findByPk(pk);
         let pokemon_result = JSON.parse(JSON.stringify(pokemon));
+
+        /**
+         * Pokemon Types
+         */
         const pokemon_types_ids = await PokemonsType.findAll({
             attributes: ['typeId'],
             where: {
@@ -48,10 +52,6 @@ export const getPokemon = async(req, res) => {
                 }
             }
         })
-
-        /**
-         * Pokemon Types
-         */
         const types_id_data = JSON.parse(JSON.stringify(pokemon_types_ids));
         const types_ids = types_id_data.map((value, index, array) => {
             return value.typeId;
